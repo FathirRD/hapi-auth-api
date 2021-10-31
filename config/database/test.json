@@ -1,0 +1,7 @@
+{
+  "user": "fath",
+  "password": "asdf76",
+  "host": "localhost",
+  "port": 5432,
+  "database": "hapi_authapi_test"
+}
