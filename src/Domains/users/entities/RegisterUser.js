@@ -1,6 +1,9 @@
+/* eslint class-methods-use-this: "off" */
+/* eslint-env es6 */
+
 class RegisterUser {
   constructor(payload) {
-    this._verifyPayload(payload)
+    this._verifyPayload(payload);
 
     const { username, password, fullname } = payload;
 

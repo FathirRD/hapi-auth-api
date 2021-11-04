@@ -1,3 +1,6 @@
+/* eslint class-methods-use-this: "off" */
+/* eslint-env es6 */
+
 class RegisteredUser {
   constructor(payload) {
     this._verifyPayload(payload);
@@ -15,9 +18,9 @@ class RegisteredUser {
     }
 
     if (
-      typeof id !== 'string' ||
-      typeof username !== 'string' ||
-      typeof fullname !== 'string'
+      typeof id !== 'string'
+      || typeof username !== 'string'
+      || typeof fullname !== 'string'
     ) {
       throw new Error('REGISTERED_USER.NOT_MEET_DATA_TYPE_SPECIFICATION');
     }

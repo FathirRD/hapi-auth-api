@@ -8,8 +8,15 @@
         "airbnb-base"
     ],
     "parserOptions": {
-        "ecmaVersion": 12,
+        "ecmaVersion": 12
     },
     "rules": {
+      "no-console": "off",
+      "no-undef": "off",
+      "no-underscore-dangle": [
+        "error", {
+          "allowAfterThis": true,
+          "allow": ["_exports", "_directories"]
+        }]
     }
 }
