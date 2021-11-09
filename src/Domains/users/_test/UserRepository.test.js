@@ -8,10 +8,10 @@ describe('UserRepository interface', () => {
     // Action
     // Assert
     await expect(
-      userRepository.addUser({})
+      userRepository.addUser({}),
     ).rejects.toThrowError('USER_REPOSITORY.METHOD_NOT_IMPLEMENTED');
     await expect(
-      userRepository.verifyAvailableUsername('')
+      userRepository.verifyAvailableUsername(''),
     ).rejects.toThrowError('USER_REPOSITORY.METHOD_NOT_IMPLEMENTED');
   });
 });
